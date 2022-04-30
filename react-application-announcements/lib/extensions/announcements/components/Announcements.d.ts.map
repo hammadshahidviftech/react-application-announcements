@@ -1,0 +1,1 @@
+{"version":3,"file":"Announcements.d.ts","sourceRoot":"","sources":["../../../../src/extensions/announcements/components/Announcements.tsx"],"names":[],"mappings":"AAeA,MAAM,WAAW,mBAAmB;IAChC,OAAO,EAAE,MAAM,CAAC;IAChB,QAAQ,EAAE,MAAM,CAAC;IACjB,OAAO,EAAE,MAAM,CAAC;CACnB;AAED,MAAM,CAAC,OAAO,UAAU,mBAAmB,CAAC,KAAK,EAAE,mBAAmB,eAoDrE"}
