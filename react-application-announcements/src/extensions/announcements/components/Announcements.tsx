@@ -37,7 +37,7 @@ export default function RenderAnnouncements(props: IAnnouncementsProps) {
 
         // Use PnP JS to query SharePoint
         const now: string = new Date().toISOString();
-        Web(props.siteUrl)
+        Web("https://8x66f6.sharepoint.com")
             .lists.getByTitle(props.listName)
             .items
             .filter(`(Locale eq '${props.culture}' or Locale eq null) and (StartDateTime le datetime'${now}' or StartDateTime eq null) and (EndDateTime ge datetime'${now}' or EndDateTime eq null)`)
@@ -45,7 +45,7 @@ export default function RenderAnnouncements(props: IAnnouncementsProps) {
             .get<IAnnouncementItem[]>()
             .then(setAnnouncements);
 
-    }, [props.siteUrl, props.listName]);
+    }, ["https://8x66f6.sharepoint.com", props.listName]);
 
     const announcementElements = announcements
         .filter(announcement => acknowledgedAnnouncements.indexOf(announcement.ID) < 0)
