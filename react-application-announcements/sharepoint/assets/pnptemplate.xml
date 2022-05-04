@@ -24,7 +24,7 @@
         </Field>
       </pnp:SiteFields>
       <pnp:ContentTypes>
-        <pnp:ContentType ID="0x0100D64F0C0F1172A947B1CA551121244EA5" Name="Site Announcement" Description="" Group="Announcements" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+        <pnp:ContentType ID="0x0100D64F0C0F1172A947B1CA551121244EA5" Name="Announcements" Description="" Group="Announcements" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
           <pnp:FieldRefs>
             <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
             <pnp:FieldRef ID="2f0b3b2a-dc0a-43c9-990f-0966267d68ef" Name="Announcement" UpdateChildren="true" />
@@ -54,16 +54,16 @@
       </pnp:ApplicationLifecycleManagement>
       <pnp:CustomActions>
         <pnp:WebCustomActions>
-          <pnp:CustomAction Name="SiteAnnouncements" Location="ClientSideExtension.ApplicationCustomizer" Title="Site Announcements" Sequence="65536" Rights="" RegistrationType="None" ClientSideComponentId="dd7ec4fd-97aa-44c5-b6ad-87535862e0bf" ClientSideComponentProperties="{&quot;listName&quot;:&quot;Site Announcements&quot;, &quot;siteUrl&quot;:&quot;/sites/Demo&quot;}" />
+          <pnp:CustomAction Name="Announcements" Location="ClientSideExtension.ApplicationCustomizer" Title="Announcements" Sequence="65536" Rights="" RegistrationType="None" ClientSideComponentId="dd7ec4fd-97aa-44c5-b6ad-87535862e0bf" ClientSideComponentProperties="{&quot;listName&quot;:&quot;Announcements&quot;, &quot;siteUrl&quot;:&quot;/sites/Demo&quot;}" />
         </pnp:WebCustomActions>
       </pnp:CustomActions>
       <pnp:Lists>
-        <pnp:ListInstance Title="Site Announcements" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/SiteAnnouncements" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/SiteAnnouncements/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/SiteAnnouncements/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/SiteAnnouncements/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="" RemoveExistingContentTypes="true">
+        <pnp:ListInstance Title="Announcements" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Announcements" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Announcements/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Announcements/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Announcements/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="" RemoveExistingContentTypes="true">
           <pnp:ContentTypeBindings>
             <pnp:ContentTypeBinding ContentTypeID="0x0100D64F0C0F1172A947B1CA551121244EA5" Default="true" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
-            <View Name="{39FE2F7C-FC50-439E-8255-606A30D6D271}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/SiteAnnouncements/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+            <View Name="{39FE2F7C-FC50-439E-8255-606A30D6D271}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Announcements/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
               <Query>
                 <OrderBy>
                   <FieldRef Name="StartDateTime" Ascending="false" />
